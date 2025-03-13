@@ -1,0 +1,146 @@
+.top-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #85c785;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-color: #691a1a;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 980px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #290000;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100vh;
+    right: -100vh;
+    bottom: 0;
+    background-color: #290000;
+    z-index: -1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 980px;
+    margin: 30px 0 45px 0;
+
+}
+
+.logo {
+    font-size: 30px;
+    margin-right: 150px;
+    white-space: nowrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #85c785;
+    color: white;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.text-block {
+    margin-right: 100px;
+    max-width: 340px;
+    text-align: left;
+}
+
+.primary-title {
+    font-size: 36px;
+}
+
+.primary-text {
+    font-size: 18px;
+    margin-bottom: 22px;
+    color: #ccc;
+}
+
+.cta-button {
+    width: 140px;
+    height: 35px;
+    text-decoration: none;
+    background-color: #85c785;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    line-height: 34px;
+}
+
+.cta-button:hover {
+    background-color: #6fa36f;
+}
+
+.image-container {
+    width: 380px;
+    height: 380px;
+    background-color: #333;
+    border: 20px solid #757575;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
