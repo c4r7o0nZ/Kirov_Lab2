@@ -62,11 +62,15 @@
     font-size: 11px !important;
 }
 
-.admin span {
+.admin a {
     color: #5c5c5c;
     font-size: 11px !important;
+    text-decoration: none;
 }
 
+.admin a:hover {
+    color: #6fa36f;
+}
 
 .read-more-button {
     color: #85c785;
@@ -91,6 +95,10 @@
     display: block;
     margin-bottom: 13px;
     font-size: 13px;
+}
+
+.bullet-list a:hover {
+    color: #6fa36f;
 }
 
 .bullet-list a::before {
